@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello Transcript!</title>
+  </head>
+  <body>
+    <h1>Transcript</h1>
+    <ul>
+      {{#each transcript}}
+      <li>{{this.ParticipantRole}} {{this.BeginOffsetMillis}} - {{this.EndOffsetMillis}}</li>
+      <li>{{this.Content}}</li>
+      <br />
+      {{/each}}
+    </ul>
+  </body>
+</html>
